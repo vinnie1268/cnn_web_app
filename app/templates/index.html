@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Vehicle Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-wrapper">
+
+    <!-- HEADER TAB -->
+    <div class="top-bar">
+        <span class="logo">🤖 AI Vision</span>
+        <span class="tag">Car vs Bike Classifier</span>
+    </div>
+
+    <!-- MAIN CARD -->
+    <div class="main-card">
+
+        <!-- LEFT INFO PANEL -->
+        <div class="info-panel">
+            <h1>Deep Learning<br>Image Classifier</h1>
+            <p>
+                Upload an image and our CNN model will instantly
+                classify whether it is a <b>Car</b> or a <b>Bike</b>.
+            </p>
+
+            <div class="tech-tags">
+                <span>Deep Learning</span>
+                <span>CNN</span>
+                <span>FastAPI</span>
+                <span>Azure</span>
+            </div>
+        </div>
+
+        <!-- RIGHT PREDICTION PANEL -->
+        <div class="predict-panel">
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <div id="preview" class="preview-box"></div>
+
+            <button onclick="predict()">🚀 Predict</button>
+
+            <p id="loading" class="loading">Analyzing image...</p>
+            <h2 id="result"></h2>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

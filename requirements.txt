@@ -1,0 +1,25 @@
+
+# Core numerical dependency
+
+numpy<2
+
+# PyTorch (CPU, Python 3.10 safe)
+
+torch==2.1.2
+torchvision==0.16.2
+
+# Image processing
+
+Pillow
+opencv-python-headless
+
+
+# Web server & framework
+
+Flask
+gunicorn
+
+
+# Utilities
+
+requests

@@ -1,0 +1,7 @@
+IMAGE_SIZE = 224
+BATCH_SIZE = 32
+EPOCHS = 20
+LEARNING_RATE = 1e-4
+NUM_CLASSES = 1
+MODEL_PATH = "models/best_model.pth"
+DEVICE = "cuda"
