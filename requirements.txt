@@ -16,7 +16,7 @@ opencv-python-headless
 
 # Web server & framework
 
-Flask
+flask
 gunicorn
 
 
