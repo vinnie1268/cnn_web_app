@@ -1,32 +1,11 @@
-
-
-
-
-
-# ---------------------------
-# Core numerical dependency
-# ---------------------------
 numpy<2
 
-
-# ---------------------------
-# PyTorch (CPU-only, Azure safe)
-# ---------------------------
 --extra-index-url https://download.pytorch.org/whl/cpu
-
 torch==2.1.2+cpu
 torchvision==0.16.2+cpu
 
-
-# ---------------------------
-# Image processing
-# ---------------------------
 Pillow
 opencv-python-headless
 
-
-# ---------------------------
-# Web framework & server
-# ---------------------------
 flask
 gunicorn
