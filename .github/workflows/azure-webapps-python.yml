@@ -1,7 +1,7 @@
 name: Build and deploy Flask app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: cnn-car-bike-app
+  AZURE_WEBAPP_NAME: cnn-app-26
   PYTHON_VERSION: "3.10"
 
 on:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Azure OIDC Login (NEW credentials)
+      # Azure OIDC Login
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -40,4 +40,3 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           package: app.zip
-
